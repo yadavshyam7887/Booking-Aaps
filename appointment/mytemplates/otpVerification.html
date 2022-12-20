@@ -1,0 +1,66 @@
+{% extends 'base/base.html' %}
+{% block title %}Doctor Booking App - Otp Verification {% endblock %}
+
+{% block content %}
+
+<br>
+<div class="row">
+
+    <div class="col-md-12">
+
+        <!--        sign in code starts here -->
+
+        <form  action="/otpverification" method="get">
+
+        <section class="vh-100" style="background-color: #508bfc;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+
+            <h3 class="mb-5">Verify OTP</h3>
+
+
+
+            <div class="form-outline mb-4">
+<!--                <input type="text" name ='mobile' value="mobile">Mobile Number {{mobile}}-->
+                <input type="text" name = "mobile" value="{{mobile}}"  class="form-control form-control-lg" placeholder="Mobile " required/>
+
+
+                <label class="form-label" for="typeEmailX-2" name = "mobile"> Mobile Number {{mobile}}</label>
+<!--                <label class="form-label" for="typeEmailX-2"> OTP</label>-->
+<!--                <label class="form-label" for="typeEmailX-2"> TIME</label>-->
+              <input type="text" name = "otpverification"  id="typeEmailX-2"  class="form-control form-control-lg" placeholder="Enter OTP Number" required/>
+                <br>
+<!--                <label class="form-label" for="typeEmailX-2"> <a href="http://127.0.0.1:8000/otp">Send OTP </a></label>-->
+<!--                <label class="form-label" for="typeEmailX-2"> Date Time {{date}}</label>-->
+            </div>
+
+<!--            <div class="form-outline mb-4">-->
+<!--              <input type="text" id="typePasswordX-2" class="form-control form-control-lg" placeholder="Enter OTP" name="otp" value="{{otp}}"/>-->
+<!--&lt;!&ndash;              <label class="form-label" for="typePasswordX-2"></label>&ndash;&gt;-->
+<!--            </div>-->
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+
+<!--            <p>Don't have account. <a href = "http://127.0.0.1:8000/reg">click here</a></p>-->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+        <!--        sign in code ends here -->
+        </form>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

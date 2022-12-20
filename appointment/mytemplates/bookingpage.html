@@ -1,0 +1,75 @@
+{% extends 'base/base.html' %}
+{% block title %}Doctor Booking App - Otp Verification {% endblock %}
+
+{% block content %}
+
+<br>
+<div class="row">
+
+    <div class="col-md-12">
+
+        <!--        sign in code starts here -->
+
+        <form   method="get">
+
+        <section class="vh-100" style="background-color: #508bfc;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+
+            <h3 class="mb-5">Booking Slot</h3>
+
+
+
+            <div class="form-outline mb-4">
+                <table style = "padding-top: 10px; margin: 4px; background-color: powderblue;">
+                    <tr>
+                        <td>
+                            <label class="form-label" for="typeEmailX-2"> Booking Start Time</label>
+                        </td>
+                        <td>
+                            <input type="time" name = "bst"   class="form-control form-control-lg"  required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="form-label" for="typeEmailX-2" >Booking End Time</label>
+                        </td>
+                        <td>
+                            <input type="time" name = "bet"   class="form-control form-control-lg"  required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="form-label" for="typeEmailX-2" >Per Patient Duration</label>
+                        </td>
+                        <td>
+                            <input type="number" name = "ppd"  class="form-control form-control-lg" placeholder="in Minutes" required/>
+                        </td>
+                    </tr>
+                </table>
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+        <!--        sign in code ends here -->
+        </form>
+
+    </div>
+
+</div>
+
+
+{% endblock %}
